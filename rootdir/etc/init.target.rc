@@ -124,6 +124,7 @@ on init
 
 on early-fs
     start vold
+    write /sys/power/mem_sleep "deep"
 
 on fs
     start hwservicemanager
